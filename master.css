@@ -1,0 +1,275 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+}
+
+/* Horizontal Rule styles */
+hr {
+    border: none;
+    background-color: #ccc;
+    width: 80%;
+    height: 1px;
+    margin: auto;
+}
+
+@media(max-width:767px) {
+    hr {
+        width: 95%;
+    }
+}
+
+/* Heading Styles */
+h2 {
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2+span {
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 8px 0;
+    box-shadow: 0 0 8px 0px #777;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+header nav div:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+
+@media(max-width:767px) {
+    header nav div:last-child {
+        display: none;
+    }
+}
+
+header a {
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+header a:hover {
+    background-color: #ccc;
+}
+
+/* Main Section */
+.main {
+    padding-top: 53px;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+}
+
+.main .text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.main .text h1 {
+    font-size: 35px;
+    color: #555;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+@media(max-width:767px) {
+    .main .text {
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+
+.about .imge {
+    width: 48%;
+}
+
+.about .text {
+    width: 48%;
+}
+
+.about img {
+    width: 100%;
+    filter: opacity(80%);
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about p b {
+    background-color: #ccc;
+    padding: 3px;
+}
+
+.about .cola {
+    color: #555;
+}
+
+@media(max-width:767px) {
+    .about {
+        width: 95%;
+    }
+
+    .about .text {
+        width: 100%;
+    }
+
+    .about .imge {
+        display: none;
+    }
+}
+
+/* Menu Section */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.menu h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.menu p {
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.menu img {
+    filter: opacity(80%);
+}
+
+@media(max-width:767px) {
+    .menu {
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .menu img {
+        width: 100%;
+    }
+}
+
+/* Contact Section */
+.contact {
+    width: 80%;
+    margin: 0px auto;
+    padding: 100px 0;
+}
+
+.contact h2 {
+    text-align: left;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact strong {
+    color: rgb(83, 83, 143);
+    font-size: 20px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+/* Form Styles */
+form input {
+    display: block;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline-color: #00f;
+}
+
+form input[type=submit] {
+    width: fit-content;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+@media(max-width:767px) {
+    .contact {
+        width: 95%;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #eee;
+    padding: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    color: #00f;
+}
